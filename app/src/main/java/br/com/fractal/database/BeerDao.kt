@@ -134,7 +134,7 @@ class BeerDao(db: SQLiteDatabase, devOpenHelper: DaoMaster.DevOpenHelper) : Abst
 
     override fun deleteEntity(entity: Beer): Boolean {
         open()
-        val where = " " + COLUMN_ID + " = " + entity.id
+        val where = " " + COLUMN_ID + " = " + "\"" + entity.id + "\""
         var v = true
         try {
             v = db.delete(TABLE_NAME, where, null) >= 0
