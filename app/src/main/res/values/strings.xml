@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">fractal-android</string>
+
+    <!-- COMMON -->
+    <string name="label_ok">Ok</string>
+    <string name="label_attention">Atenção</string>
+
+    <!--Errors-->
+    <string name="error_communication">Problemas de comunicação</string>
+
+</resources>

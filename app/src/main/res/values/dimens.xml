@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!--Floating action button-->
+    <dimen name="design_fab_image_size" tools:override="true">36dp</dimen>
+    <dimen name="activity_vertical_space">12dp</dimen>
+
+    <!-- default dimens -->
+    <dimen name="pad_5dp">5dp</dimen>
+    <dimen name="pad_10dp">10dp</dimen>
+    <dimen name="pad_15dp">15dp</dimen>
+    <dimen name="pad_20dp">20dp</dimen>
+    <dimen name="pad_25dp">25dp</dimen>
+    <dimen name="pad_30dp">30dp</dimen>
+    <dimen name="txt_7sp">7sp</dimen>
+    <dimen name="txt_12sp">12sp</dimen>
+    <dimen name="txt_13sp">13sp</dimen>
+    <dimen name="txt_14sp">14sp</dimen>
+    <dimen name="txt_15sp">15sp</dimen>
+    <dimen name="txt_16sp">16sp</dimen>
+    <dimen name="txt_18sp">18sp</dimen>
+    <dimen name="txt_20sp">20sp</dimen>
+    <dimen name="txt_21sp">21sp</dimen>
+    <dimen name="txt_28sp">28sp</dimen>
+    <!-- default dimens -->
+
+    <dimen name="toolbarheight">56dp</dimen>
+    <dimen name="toolbar_margin_start">72dp</dimen>
+    <dimen name="toolbar_inset">10dp</dimen>
+    <dimen name="flexible_space_image_height">240dp</dimen>
+    <dimen name="flexible_space_show_fab_offset">120dp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="material_drawer_account_header_height_compact">200dp</dimen>
+    <dimen name="material_drawer_item_profile">200dp</dimen>
+
+    <!-- Per the design guidelines, navigation drawers should be between 240dp and 320dp:
+         https://developer.android.com/design/patterns/navigation-drawer.html -->
+    <!--<dimen name="navigation_drawer_width">240dp</dimen>-->
+    <dimen name="margin_small">12dp</dimen>
+    <dimen name="margin_xsmall">6dp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+    <dimen name="default_icon_height">40dp</dimen>
+    <dimen name="default_icon_width">40dp</dimen>
+
+    <bool name="isTablet">false</bool>
+
+    <dimen name="size_A">1dp</dimen>
+    <dimen name="size_A_1">2dp</dimen>
+    <dimen name="size_A_2">3dp</dimen>
+    <dimen name="size_A_3">4dp</dimen>
+    <dimen name="size_B">5dp</dimen>
+    <dimen name="size_C">10dp</dimen>
+    <dimen name="size_D">15dp</dimen>
+    <dimen name="size_E">20dp</dimen>
+    <dimen name="size_F">25dp</dimen>
+    <dimen name="size_G">30dp</dimen>
+    <dimen name="size_H">35dp</dimen>
+    <dimen name="size_I">40dp</dimen>
+    <dimen name="size_J">45dp</dimen>
+    <dimen name="size_L">50dp</dimen>
+    <dimen name="size_M">55dp</dimen>
+    <dimen name="size_N">60dp</dimen>
+    <dimen name="size_O">65dp</dimen>
+    <dimen name="size_P">70dp</dimen>
+    <dimen name="size_Q">75dp</dimen>
+    <dimen name="size_R">80dp</dimen>
+    <dimen name="size_S">85dp</dimen>
+    <dimen name="size_T">90dp</dimen>
+    <dimen name="size_U">95dp</dimen>
+    <dimen name="size_V">100dp</dimen>
+    <dimen name="size_W">105dp</dimen>
+    <dimen name="size_X">110dp</dimen>
+    <dimen name="size_Y">115dp</dimen>
+    <dimen name="size_Z">120dp</dimen>
+    <dimen name="size_A1">125dp</dimen>
+    <dimen name="size_B1">130dp</dimen>
+    <dimen name="size_C1">135dp</dimen>
+    <dimen name="size_D1">140dp</dimen>
+    <dimen name="size_E1">145dp</dimen>
+    <dimen name="size_F1">150dp</dimen>
+    <dimen name="size_G1">155dp</dimen>
+    <dimen name="size_H1">160dp</dimen>
+    <dimen name="size_I1">165dp</dimen>
+    <dimen name="size_J1">170dp</dimen>
+    <dimen name="size_L1">175dp</dimen>
+    <dimen name="size_M1">180dp</dimen>
+    <dimen name="size_N1">185dp</dimen>
+    <dimen name="size_O1">190dp</dimen>
+    <dimen name="size_P1">195dp</dimen>
+    <dimen name="size_Q1">200dp</dimen>
+    <dimen name="size_R1">205dp</dimen>
+    <dimen name="size_S1">210dp</dimen>
+    <dimen name="size_T1">215dp</dimen>
+    <dimen name="size_U1">220dp</dimen>
+    <dimen name="size_V1">225dp</dimen>
+    <dimen name="size_W1">230dp</dimen>
+    <dimen name="size_Y1">235dp</dimen>
+    <dimen name="size_Z1">240dp</dimen>
+
+    <dimen name="size_XX0">250dp</dimen>
+    <dimen name="size_XX1">300dp</dimen>
+    <dimen name="size_XX2">400dp</dimen>
+
+    <dimen name="font_size_A">2sp</dimen>
+    <dimen name="font_size_B">4sp</dimen>
+    <dimen name="font_size_C">5sp</dimen>
+    <dimen name="font_size_D">7sp</dimen>
+    <dimen name="font_size_Da">9sp</dimen>
+    <dimen name="font_size_E">10sp</dimen>
+    <dimen name="font_size_Ea">11sp</dimen>
+    <dimen name="font_size_F">12sp</dimen>
+    <dimen name="font_size_Fa">13sp</dimen>
+    <dimen name="font_size_G">14sp</dimen> <!-- TEXT APPEARANCE SMALL -->
+    <dimen name="font_size_Ga">15sp</dimen>
+    <dimen name="font_size_H">16sp</dimen>
+    <dimen name="font_size_I">18sp</dimen> <!-- TEXT APPEARANCE MEDIUM -->
+    <dimen name="font_size_J">20sp</dimen>
+    <dimen name="font_size_L">22sp</dimen> <!-- TEXT APPEARANCE LARGE -->
+    <dimen name="font_size_M">24sp</dimen>
+    <dimen name="font_size_N">26sp</dimen>
+    <dimen name="font_size_O">28sp</dimen>
+    <dimen name="font_size_P">30sp</dimen>
+    <dimen name="font_size_Q">32sp</dimen>
+    <dimen name="font_size_R">34sp</dimen>
+    <dimen name="font_size_S">36sp</dimen>
+    <dimen name="font_size_T">38sp</dimen>
+    <dimen name="font_size_U">40sp</dimen>
+    <dimen name="font_size_V">42sp</dimen>
+    <dimen name="font_size_X">44sp</dimen>
+    <dimen name="font_size_Z">46sp</dimen>
+
+    <!-- Default FORM -->
+    <dimen name="form_padding">5dp</dimen>
+    <dimen name="form_header_padding">5dp</dimen>
+    <dimen name="form_separator_margin">5dp</dimen>
+    <dimen name="form_separator_height">1dp</dimen>
+    <dimen name="form_component_height">30dp</dimen>
+    <dimen name="form_component_textize">20sp</dimen>
+
+    <!-- Default title bar -->
+    <dimen name="titlebar_height">50dp</dimen>
+
+    <dimen name="offset_margin_right">1dp</dimen>
+    <dimen name="offset_margin_left">1dp</dimen>
+    <dimen name="offset_margin_top">1dp</dimen>
+    <dimen name="offset_margin_bottom">1dp</dimen>
+    <dimen name="navigation_separator_vertical_padding">5dp</dimen>
+
+    <dimen name="size_menu_drawer">320dp</dimen>
+
+    //Material Design
+    <dimen name="size_material_design_A">8dp</dimen>
+    <dimen name="size_material_design_A1">10dp</dimen>
+    <dimen name="size_material_desing_B">16dp</dimen>
+    <dimen name="size_material_desing_C">32dp</dimen>
+    <dimen name="size_material_desing_D">48dp</dimen>
+
+    <dimen name="fragmentGpsDisabled_text_sisze">32sp</dimen>
+    <dimen name="use_address_book_text_title_size">32sp</dimen>
+
+    <dimen name="dialog_geofencing_alerts_map_height">200dp</dimen>
+
+    <dimen name="fab_margin_top">8dp</dimen>
+    <dimen name="fab_size">40dp</dimen>
+
+    <!--row_card-->
+    <dimen name="row_card_margin">10dp</dimen>
+
+    <dimen name="label_text_size">8sp</dimen>
+</resources>
