@@ -70,7 +70,7 @@ class BeerAdapter(private var dataSet: MutableList<Beer>?) : RecyclerView.Adapte
             //desc
             viewHolder.row_beer__textview_desc.text = entity.description
 
-            if(DaoFactory.getInstance().beerDao.isFavorite(entity.id)) {
+            if (DaoFactory.getInstance().beerDao.isFavorite(entity.id)) {
                 viewHolder.row_beer__imageview_favorite.setImageResource(R.drawable.heart_yellow)
             } else viewHolder.row_beer__imageview_favorite.setImageResource(R.drawable.ic_heart_grey600_36dp)
         }
@@ -107,7 +107,8 @@ class BeerAdapter(private var dataSet: MutableList<Beer>?) : RecyclerView.Adapte
         }
 
         override fun onClick(v: View) {
-
+            if (itemClickListener != null)
+                itemClickListener?.onItemClickInfo(v, adapterPosition)
         }
 
     }

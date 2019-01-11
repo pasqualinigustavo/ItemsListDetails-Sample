@@ -29,7 +29,11 @@ class ItemDetailFragment : Fragment(), ItemDetailView {
         val TAG = ItemDetailFragment::class.java.simpleName
 
         @JvmStatic
-        fun newInstance(beer: Beer) = ItemDetailFragment()
+        fun getInstance(beer: Beer): ItemDetailFragment {
+            val fragment = ItemDetailFragment()
+            fragment.beer = beer
+            return fragment
+        }
     }
 
     private var hasContext = false
@@ -87,7 +91,7 @@ class ItemDetailFragment : Fragment(), ItemDetailView {
     fun initData() {
         beer.let {
             fragment_item_details__textview_name.setText(beer?.name)
-            fragment_item_details__textview_name.setText(beer?.description)
+            fragment_item_details__textview_desc.setText(beer?.description)
             if (presenter.isFavorite(beer))
                 fragment_item_details__imageview_favorite.setImageResource(R.drawable.heart_yellow)
             else fragment_item_details__imageview_favorite.setImageResource(R.drawable.ic_heart_grey600_36dp)

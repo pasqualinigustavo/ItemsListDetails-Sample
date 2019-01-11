@@ -19,7 +19,7 @@ class MainNavigator(private val activity: MainActivity) {
     }
 
     fun showItemDetailView(beer: Beer) {
-        setFragment(ItemDetailFragment.newInstance(beer), ItemDetailFragment.Companion.TAG)
+        setFragment(ItemDetailFragment.getInstance(beer), ItemDetailFragment.Companion.TAG)
     }
 
     private fun setFragment(fragment: Fragment, tag: String) {
