@@ -2,8 +2,8 @@ package br.com.fractal.fragments.items
 
 import android.util.Log
 import br.com.fractal.R
-import br.com.fractal.activities.main.router.MainRouter
 import br.com.fractal.application.FractalApplication
+import br.com.fractal.fragments.items.router.ItemListRouter
 import br.com.fractal.model.Beer
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.schedulers.Schedulers
@@ -12,7 +12,7 @@ import io.reactivex.schedulers.Schedulers
  * @author Gustavo Pasqualini
  */
 
-class ItemListPresenter constructor(private val interactor: ItemListInteractor, private val router: MainRouter) {
+class ItemListPresenter constructor(private val interactor: ItemListInteractor) {
 
     companion object {
         val TAG = ItemListPresenter::class.java.simpleName
