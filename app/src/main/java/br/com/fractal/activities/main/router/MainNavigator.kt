@@ -4,6 +4,7 @@ import android.support.v4.app.Fragment
 import android.util.Log
 import br.com.fractal.R
 import br.com.fractal.activities.main.MainActivity
+import br.com.fractal.fragments.items.ItemListFragment
 
 class MainNavigator(private val activity: MainActivity) {
 
@@ -11,10 +12,8 @@ class MainNavigator(private val activity: MainActivity) {
         private val TAG = MainNavigator::class.java.simpleName
     }
 
-    fun showMapView() {
-//        val fragment = MapFragment.newInstance()
-//        val tag = fragment::class.java.simpleName
-//        setFragment(fragment, tag)
+    fun showItemListView() {
+        setFragment(ItemListFragment.newInstance(),ItemListFragment.Companion.TAG)
     }
 
     private fun setFragment(fragment: Fragment, tag: String) {

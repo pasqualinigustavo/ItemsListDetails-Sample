@@ -8,7 +8,6 @@ import br.com.fractal.application.FractalApplication
 import br.com.fractal.di.components.ApplicationComponent
 import br.com.fractal.di.components.DaggerMainComponent
 import br.com.fractal.di.components.MainComponent
-import br.com.fractal.fragments.items.ItemListFragment
 import javax.inject.Inject
 
 class MainActivity : AppCompatActivity(), MainView {
@@ -43,15 +42,7 @@ class MainActivity : AppCompatActivity(), MainView {
 
 
     fun initData() {
-        initFirstFragment()
+        presenter.showItemListView()
         setTitle(getString(R.string.app_name))
-    }
-
-    private fun initFirstFragment() {
-        val transaction = this.supportFragmentManager.beginTransaction()
-        val fragment = ItemListFragment.newInstance()
-        val tag = fragment.javaClass.canonicalName
-        transaction.replace(R.id.activity_content, fragment, tag)
-        transaction.commit()
     }
 }

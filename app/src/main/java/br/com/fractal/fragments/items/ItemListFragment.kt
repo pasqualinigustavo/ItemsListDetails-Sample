@@ -118,11 +118,12 @@ class ItemListFragment : Fragment(), ItemListView, IAdapterDataSource {
         if (currentDataSetPage === 1 || adapter == null) {
             adapter = BeerAdapter(beerList)
             adapter.setAdapterInteractionListener(this)
-//            adapter.setOnItemClickListener(object : BeerAdapter.OnItemClickListener() {
-//                fun onItemClick(view: View, position: Int, item: Beer) {
-//                    //executeItemOfferClick(view, position, item)
-//                }
-//            })
+            adapter.setOnItemClickListener(object : BeerAdapter.OnItemClickListener {
+                override fun onItemClickInfo(view: View, position: Int) {
+                    presenter.showItemDetails(adapter.getItem(position))
+                }
+            })
+
             fragment_beer__recyclerview.setAdapter(adapter)
         } else {
             if (beerList == null || beerList.size == 0)
@@ -137,6 +138,10 @@ class ItemListFragment : Fragment(), ItemListView, IAdapterDataSource {
                 fragment_beer__recyclerview.scrollToPosition(overallYScroll);
             }
         }
+    }
+
+    fun teste() {
+
     }
 
     override fun showError(message: String) {

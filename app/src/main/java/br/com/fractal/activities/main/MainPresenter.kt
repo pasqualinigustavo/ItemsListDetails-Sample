@@ -14,7 +14,7 @@ class MainPresenter(private val router: MainRouter) {
         this.mView = null
     }
 
-    fun showMapView() {
-        router.showMapView()
+    fun showItemListView() {
+        router.showItemListView()
     }
 }
