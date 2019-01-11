@@ -4,7 +4,9 @@ import android.support.v4.app.Fragment
 import android.util.Log
 import br.com.fractal.R
 import br.com.fractal.activities.main.MainActivity
+import br.com.fractal.fragments.details.ItemDetailFragment
 import br.com.fractal.fragments.items.ItemListFragment
+import br.com.fractal.model.Beer
 
 class MainNavigator(private val activity: MainActivity) {
 
@@ -13,16 +15,20 @@ class MainNavigator(private val activity: MainActivity) {
     }
 
     fun showItemListView() {
-        setFragment(ItemListFragment.newInstance(),ItemListFragment.Companion.TAG)
+        setFragment(ItemListFragment.newInstance(), ItemListFragment.Companion.TAG)
+    }
+
+    fun showItemDetailView(beer: Beer) {
+        setFragment(ItemDetailFragment.newInstance(beer), ItemDetailFragment.Companion.TAG)
     }
 
     private fun setFragment(fragment: Fragment, tag: String) {
         try {
             activity.supportFragmentManager
-                    .beginTransaction()
-                    .replace(R.id.activity_content, fragment)
-                    .addToBackStack(tag)
-                    .commit()
+                .beginTransaction()
+                .replace(R.id.activity_content, fragment)
+                .addToBackStack(tag)
+                .commit()
             activity.supportFragmentManager.executePendingTransactions()
         } catch (e: Exception) {
             Log.e(TAG, e.message)

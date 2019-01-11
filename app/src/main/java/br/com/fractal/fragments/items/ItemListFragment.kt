@@ -13,6 +13,8 @@ import android.view.View
 import android.view.ViewGroup
 import br.com.fractal.R
 import br.com.fractal.activities.main.MainActivity
+import br.com.fractal.activities.main.di.MainModule
+import br.com.fractal.di.components.DaggerMainComponent
 import br.com.fractal.di.components.MainComponent
 import br.com.fractal.fragments.items.adapter.BeerAdapter
 import br.com.fractal.fragments.items.adapter.IAdapterDataSource

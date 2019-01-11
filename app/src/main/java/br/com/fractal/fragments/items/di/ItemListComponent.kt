@@ -6,7 +6,10 @@ import br.com.fractal.fragments.items.ItemListFragment
 import dagger.Component
 
 @PerFragment
-@Component(modules = [(ItemListModule::class)], dependencies = [(MainComponent::class)])
+@Component(
+    dependencies = arrayOf(MainComponent::class),
+    modules = arrayOf(ItemListModule::class)
+)
 interface ItemListComponent {
 
     fun inject(target: ItemListFragment)

@@ -12,7 +12,7 @@ import io.reactivex.schedulers.Schedulers
  * @author Gustavo Pasqualini
  */
 
-class ItemListPresenter constructor(private val interactor: ItemListInteractor) {
+class ItemListPresenter constructor(private val interactor: ItemListInteractor, private val router: ItemListRouter) {
 
     companion object {
         val TAG = ItemListPresenter::class.java.simpleName
@@ -50,6 +50,6 @@ class ItemListPresenter constructor(private val interactor: ItemListInteractor) 
     }
 
     fun showItemDetails(item: Beer) {
-
+        router.showItemDetailView(item)
     }
 }

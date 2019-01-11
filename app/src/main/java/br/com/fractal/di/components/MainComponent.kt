@@ -2,6 +2,7 @@ package br.com.fractal.di.components
 
 import br.com.fractal.activities.main.MainActivity
 import br.com.fractal.activities.main.di.MainModule
+import br.com.fractal.activities.main.router.MainNavigator
 import br.com.fractal.di.PerActivity
 import dagger.BindsInstance
 import dagger.Component
@@ -11,6 +12,7 @@ import dagger.Component
 interface MainComponent {
 
     fun inject(item: MainActivity)
+    fun provideMainNavigator(): MainNavigator
 
     @Component.Builder
     interface Builder {
