@@ -2,7 +2,6 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
                                              xmlns:tools="http://schemas.android.com/tools"
                                              xmlns:app="http://schemas.android.com/apk/res-auto"
-                                             android:id="@+id/row_beer__container"
                                              android:layout_width="match_parent"
                                              android:layout_height="wrap_content"
                                              android:layout_marginLeft="@dimen/pad_15dp"
@@ -31,7 +30,7 @@
                        android:layout_gravity="center"
                        android:layout_marginLeft="5dp"
                        android:src="@drawable/ic_heart_grey600_36dp"
-                       android:id="@+id/row_beer__imageview_favorite"
+                       android:id="@+id/fragment_item_details__imageview_favorite"
                        android:layout_height="60dp"/>
 
             <LinearLayout
@@ -40,7 +39,7 @@
                     android:layout_height="wrap_content">
 
                 <TextView
-                        android:id="@+id/row_beer__textview_name"
+                        android:id="@+id/fragment_item_details__textview_name"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
@@ -52,14 +51,12 @@
                         android:textStyle="bold"/>
 
                 <TextView
-                        android:id="@+id/row_beer__textview_desc"
+                        android:id="@+id/fragment_item_details__textview_desc"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
                         android:layout_marginLeft="@dimen/pad_15dp"
                         android:layout_marginTop="@dimen/pad_5dp"
-                        android:lines="3"
-                        android:ellipsize="end"
                         android:textColor="@color/colorSecondaryDark"
                         android:layout_marginBottom="@dimen/pad_10dp"
                         tools:text="info 1"

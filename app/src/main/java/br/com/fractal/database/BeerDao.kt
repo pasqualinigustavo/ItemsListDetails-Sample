@@ -35,11 +35,11 @@ class BeerDao(db: SQLiteDatabase, devOpenHelper: DaoMaster.DevOpenHelper) : Abst
         return if (entity.id != null) hasEntityById(entity.id!!) else null
     }
 
-    fun hasEntityById(id: String): Beer? {
+    fun hasEntityById(id: String?): Beer? {
         openForRead()
         var entity: Beer? = null
         val selectClausule = ("SELECT * FROM " + TABLE_NAME + " WHERE "
-                + COLUMN_ID + " = " + id)
+                + COLUMN_ID + " = " + "\"" + id + "\"")
 
         val cursor = db.rawQuery(selectClausule, null)
         if (cursor!!.moveToFirst()) {
@@ -173,6 +173,9 @@ class BeerDao(db: SQLiteDatabase, devOpenHelper: DaoMaster.DevOpenHelper) : Abst
 
     }
 
+    fun isFavorite(id: String?): Boolean {
+        return hasEntityById(id) != null
+    }
 
     override fun emptyTable(): Boolean {
         open()

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">fractal-android</string>
+    <string name="app_name">Beers</string>
 
     <!-- COMMON -->
     <string name="label_ok">Ok</string>

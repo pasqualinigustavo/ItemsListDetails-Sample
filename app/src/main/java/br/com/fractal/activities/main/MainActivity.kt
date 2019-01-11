@@ -44,6 +44,7 @@ class MainActivity : AppCompatActivity(), MainView {
 
     fun initData() {
         initFirstFragment()
+        setTitle(getString(R.string.app_name))
     }
 
     private fun initFirstFragment() {

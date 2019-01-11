@@ -8,6 +8,7 @@ import android.widget.ImageView
 import android.widget.ProgressBar
 import android.widget.TextView
 import br.com.fractal.R
+import br.com.fractal.database.DaoFactory
 import br.com.fractal.model.Beer
 
 class BeerAdapter(private var dataSet: MutableList<Beer>?) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
@@ -68,6 +69,10 @@ class BeerAdapter(private var dataSet: MutableList<Beer>?) : RecyclerView.Adapte
             viewHolder.row_beer__textview_name.text = entity.name
             //desc
             viewHolder.row_beer__textview_desc.text = entity.description
+
+            if(DaoFactory.getInstance().beerDao.isFavorite(entity.id)) {
+                viewHolder.row_beer__imageview_favorite.setImageResource(R.drawable.heart_yellow)
+            } else viewHolder.row_beer__imageview_favorite.setImageResource(R.drawable.ic_heart_grey600_36dp)
         }
     }
 
